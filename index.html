@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- sweet alert link -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                 <a class="logo"  href="#"><span style="color: #0ef;; font-weight: bold;">F</span>aryal.</a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">My Work</a></li>
+                    <li><a href="https://superb-custard-8202b4.netlify.app/">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+            
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="myfont header-text">
+                <p> <span style="color: #0ef;; font-weight: bold;"> Frontend Developer.</span> </p>
+                <h1>I'm<span style="color: #0ef;; font-weight: bold;"> Faryal</span>,
+                    <br>
+                    My ambition is to become 
+                    <br>
+                    a skilled Web developer.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+     <div id="about" class="section">
+     <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+           <img src="./images/image.png">
+            </div>
+           <div class="about-col-2">
+         <h1 class="title">About Me</h1>
+         <p>
+          I am a passionate web developer with a knack for creating engaging and user-friendly websites. My journey in web development began with learning HTML, CSS, Javascript, Bootstrap, Tailwind and Sweat alert and I am continuously expanding my skill set by exploring new technologies like Git and GitHub. i m very interested to learn Web development.
+
+        When I'm not coding, I enjoy reading, hiking, and spending quality time with my family and friends. I believe in lifelong learning and am always eager to take on new challenges that help me grow both personally and professionally.
+         </p>
+
+         <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+             <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+         </div>
+
+        <!-- Skill Section -->
+         <div class="section tab-contents active-tab" id="skills">
+            
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                        
+                          <h4><span style="color: #0ef; font-weight: bold;">HTML</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-success" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">98%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">CSS</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">Bootstrap</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">JavaScript</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                          <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">Git</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-secondary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">GitHub</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                        </div>
+                          <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">Tailwind</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                        </div>
+                          <div class="col-md-4 mb-4">
+                            <h4><span style="color: #0ef; font-weight: bold;">Sweat Alert</span></h4>
+                            <div class="progress">
+                                <div  id="animation" class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Experience Section -->
+          <div class="section tab-contents" id="experience">
+
+            <ul>
+                <li>
+                  <span style="color: #0ef; font-weight: bold;">22 July - 5 Sep 2025</span><br>Frontened Internship at Corporate Hub.co.
+                </li>
+            
+            </ul>
+         </div>
+
+           <!-- Education Section -->
+          <div class="section tab-contents" id="education">
+            <ul>
+                <li>
+                  <span style="color: #0ef; font-weight: bold;">Intermediate</span><br>from Zamzama Gizri College.
+                </li>
+                 <li>
+                  <span style="color: #0ef; font-weight: bold;">Web and App Development</span><br>from Saylani Mass IT Training.
+                </li>
+            </ul>
+         </div>
+
+          </div>
+        </div>
+     </div>
+     </div>
+
+
+
+     <!-- Services Section -->
+      <div id="services" class="section">
+        <div class="container">
+             <h1 class="title">My Services</h1>
+             <div class="services-list">
+                <div>
+                   <img src="./images/Web icon.png">
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and user-friendly websites.It focuses on layout, colors, typography, and overall user experience. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                 <div>
+                    <img src="./images/UI icon.png">
+                    <h2>UI/UX Design</h2>
+                    <p>  UI/UX design focuses on creating intuitive and engaging user interfaces and experiences. It involves understanding designing wireframes, and developing. </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                 <div>
+                    <img src="./images/app icon.png">
+                    <h2>App Design</h2>
+                    <p>App design involves creating user interfaces and experiences for mobile applications. It focuses on usability, functionality, and visual appeal to ensure a seamless user experience across different devices and platforms. </p>
+                    <a href="#">Learn more</a>
+                </div>
+             </div>
+        </div>
+      </div>
+
+
+      <!-- Project Section -->
+       <div id="project" class="section">
+        <div class="container">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work  section">
+                    <img src="./images/beauty store.png">
+                    <div class="layer">
+                        <h3>Beauty Store</h3>
+                        <a href="https://beauty-store-virid.vercel.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                 <div class="work  section">
+                    <img src="./images/piano.png">
+                    <div class="layer">
+                        <h3>Piano</h3>
+                        <a href="https://musical-piano.vercel.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                 <div class="work  section">
+                    <img src="./images/AI Project.png">
+                    <div class="layer">
+                        <h3>AI WebSites</h3>
+                        <a href="https://ai-websites-nine.vercel.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+               <div class="work section">
+                    <img src="./images/Naat Player.png">
+                    <div class="layer">
+                        <h3>Naat Player</h3>
+                        <a href="https://naatmusicplayer.netlify.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                 <div class="work section">
+                    <img src="./images/Resume Builder.png">
+                    <div class="layer">
+                        <h3>Resume Builder</h3>
+                        <a href="https://hackhathonefem2026.netlify.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                 <div class="work section">
+                    <img src="./images/Smit portal.png">
+                    <div class="layer">
+                        <h3>Smit Portal</h3>
+                        <a href="https://smitportal.netlify.app/">
+                           <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="./project.html" class="btn">See MORE</a>
+        </div>
+       </div>
+
+       <!-- Testimonials -->
+        <div id="project" class="section">
+        <div class="container">
+            <h1 class="title">Testimonials</h1>
+  <blockquote class="quote">“Outstanding work and continuous improvement.”</blockquote>
+  <blockquote class="quote">“Strong frontend skills and great dedication.”</blockquote>
+        </div>
+        </div>
+
+<!-- Blog -->
+  <div id="project" class="section">
+        <div class="container">
+            <h1 class="title">Blog</h1>
+  <p class="quote">my name is faryal abdul razzaq i am currently studying web and app development course from saylani mass It training i've great skills of html, css, javascript and etc. i have so much interest in this particular field and i will keep improving.</p>
+        </div>
+  </div>
+
+<!-- Achievements -->
+   <div id="project" class="section">
+        <div class="container">
+            <h1 class="title">Achievements</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/Hackhathone.jpeg">
+                    <div class="layer">
+                        <h3>Hackhathone</h3>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="./images/Developers Hub.co Certificate.jpg">
+                    <div class="layer">
+                        <h3>Frontened Developers Hub.Co</h3>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="./images/Cisco Javascript Certificate.png">
+                    <div class="layer">
+                        <h3>Cisco Javascript </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+
+       <!-- contact section -->
+       <div id="contact" class="section">
+        <div class="container">
+              <h1 class="title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left col-md-6">
+                <p> <img src="./images/send.png">
+                    faryal77779@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                      <a href="https://www.linkedin.com/in/faryal-razzaq-87ab83368/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                        <a href="https://github.com/Faryal407">
+                           <i class="fa-brands fa-github"></i>
+                        </a>
+                          <a href="https://instagram.com/">
+                           <i class="fa-brands fa-instagram"></i>
+                        </a>
+                </div>
+
+                <a href="./images/My CV.pdf" class="btn btn2" download >Download CV</a>
+
+                </div>
+
+                 <div class="contact-right col-md-6">
+                    <form id="contactForm" action="https://formsubmit.co/faryal77779@gmail.com" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                 </div>
+                 <div id="formMessage" class="formMessage"></div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright Made By Faryal <i class="fa-solid fa-heart"></i>.</p>
+            </div>
+       </div>
+
+
+
+     <!-- Javascript codes -->
+      <script>
+        //copy text alert
+   document.addEventListener("copy", (e) => {
+  e.preventDefault();
+  Swal.fire({
+    icon: "info",
+    title: "No No do not copy my text!",
+    text: "You cannot copy content from this page.",
+    confirmButtonColor: '#ec4899',
+    timer: 2000,
+    timerProgressBar: true
+  });
+});
+      </script>
+
+     <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   }
+     </script>
+     <!-- sidemenu -->
+     <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+         function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+     </script>
+
+     <script>
+
+        //form fill
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // prevent page reload
+  // Show SweetAlert2 popup
+  Swal.fire({
+    icon: 'success',
+    title: 'Message Sent!',
+    text: '✅ Your message has been sent successfully!',
+    confirmButtonColor: '#ec4899',
+    timer: 2500,
+    timerProgressBar: true
+  });
+
+  contactForm.reset(); // reset form fields
+});
+
+
+//form message
+let form = document.getElementById("contact");
+let formMessage = document.getElementById("formMessage");
+let submitBtn = document.getElementById("message");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  formMessage.style.color = "#0ef";
+  formMessage.style.fontWeight = "bold";
+  
+  formMessage.innerText = "✅ Your message has been sent successfully!";
+  form.reset();
+});
+
+     </script>
+
+<script>
+    // scroll
+    const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      sec.classList.add('active');
+    }
+  });
+});
+
+sections.forEach(sec => sec.classList.add('reveal'));
+
+</script>
+
+
+</body>
+</html>
