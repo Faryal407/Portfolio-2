@@ -417,6 +417,13 @@ animation: myanimation 2s linear 0s infinite normal none;
 nav .fa-solid{
     display: none;
 }
+.footer-link{
+    text-decoration: none;
+    color: #0ef;
+}
+.footer-link:hover{
+    color: #fff;
+}
 
 .reveal { opacity: 0; transform: translateY(40px); }
 .reveal.active { opacity: 1; transform: translateY(0); transition: .8s; }
