@@ -34,10 +34,13 @@
             </nav>
 
 
-            <div class="myfont header-text">
-                <p> <span style="color: #0ef;; font-weight: bold;"> Frontend Developer.</span> </p>
-                <h1>I'm<span style="color: #0ef;; font-weight: bold;"> Faryal</span>,
-                    <br>
+            <div class="header-text">
+                <p>Hi! my self</p>
+                 <h1><span style="color: #0ef;; font-weight: bold;"> Faryal Razzaq</span>,
+                <p>And I am a <span class="multiple-text" style="color: #0ef;; font-weight: bold;">
+                    Web Developer!</span>
+                </p>
+                <!-- <h1>I'm<span style="color: #0ef;; font-weight: bold;"> Faryal</span>, -->
                     My ambition is to become 
                     <br>
                     a skilled Web developer.</h1>
@@ -346,7 +349,30 @@
 
 
      <!-- Javascript codes -->
+
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
+
+//person info
+let PersonInfo = {
+    name:"Faryal Abdul Razzaq",
+    batch:"Web and App Development",
+  isRegular: true
+};
+
+console.log(PersonInfo.name); 
+var typed = new Typed(".multiple-text", {
+    strings: ["Web Developer!", "Frontend Developer!", "UI Designer!"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+</script>
+
+        <script>
+
         //copy text alert
    document.addEventListener("copy", (e) => {
   e.preventDefault();
